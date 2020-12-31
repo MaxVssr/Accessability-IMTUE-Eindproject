@@ -99,3 +99,22 @@ button:hover {
 button:focus {
     background-color: #505E99;
 }
+
+.buttons-pages {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.buttons-pages button {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.7rem;
+}
+
+.active {
+    background-color: #505E99;
+}
