@@ -48,3 +48,54 @@ nav {
 .menu__item__link:hover {
     border-bottom: 2px solid white;
 }
+
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-template-rows: repeat(2,minmax(0,1fr));
+    grid-gap: 5vh;
+    margin: 5vh 30vh 1vh 30vh;
+}
+
+.card__img img{
+    width: 100%;
+    height: auto;
+}
+
+.card__img img:hover {
+    cursor: pointer;
+}
+
+/* .card {
+    border: 1px solid black;
+} */
+
+.card__body__text {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 2rem 0;
+}
+
+
+
+.card__body__buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    height: 4rem;
+    width: 35%;
+    background-color:  #121317;
+    color: white;
+    border: 1px solid #121317;
+    margin: 2rem 0.5rem 5rem 0.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #505E99;
+}
+
+button:focus {
+    background-color: #505E99;
+}
