@@ -86,16 +86,21 @@ nav {
     background-color: #505E99;
 }
 
-/* .card {
-    border: 1px solid black;
-} */
+.card__body__text__small {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.card__body__text__small__price {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
 
 .card__body__text {
     font-size: 1.4rem;
     margin: 1.5rem 0 2rem 0;
 }
-
-
 
 .card__body__buttons {
     display: flex;
@@ -135,7 +140,6 @@ button:hover, button:focus {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-
 }
 
 .buttons-pages button {
@@ -168,7 +172,6 @@ button:hover, button:focus {
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    /* overflow: auto; */
     z-index: 4;
 }
 
@@ -208,11 +211,11 @@ button:hover, button:focus {
 .fa-times {
     float: right;
     font-size: 2.5rem;
+    color: black;
 }
 
 .fa-times:hover {
     cursor: pointer;
-    color: black;
     text-decoration: none;
 }
 
@@ -244,10 +247,6 @@ button:hover, button:focus {
     font-size: 2rem;
     margin: 2rem 0 1rem 0;
 }
-
-/* .form-right {
-    margin-top: 5rem;
-} */
 
 form {
     display: flex;

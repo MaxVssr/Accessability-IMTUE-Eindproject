@@ -58,27 +58,3 @@ button[5].onclick = function(){
 close_button[5].onclick = function(){
     modal[5].style.display = "none";
 };
-
-// img[0].onclick = function() {
-//     modal[0].style.display = "block";
-// }
-
-// img[1].onclick = function() {
-//     modal[1].style.display = "block";
-// }
-
-// img[2].onclick = function() {
-//     modal[2].style.display = "block";
-// }
-
-// img[3].onclick = function() {
-//     modal[3].style.display = "block";
-// }
-
-// img[4].onclick = function() {
-//     modal[4].style.display = "block";
-// }
-
-// img[5].onclick = function() {
-//     modal[5].style.display = "block";
-// }
