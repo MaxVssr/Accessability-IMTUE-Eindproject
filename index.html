@@ -21,7 +21,7 @@
             <li class="menu__item"><a class="menu__item__link" href="">Products</a></li>
             <li class="menu__item"><a class="menu__item__link" href="">News</a></li>
             <li class="menu__item"><a class="menu__item__link" href="">About Me</a></li>
-            <li class="menu__item"><a class="menu__item__link" href="contact.html">Contact</a></li>
+            <li class="menu__item"><a class="menu__item__link" href="">Contact</a></li>
             <li class="menu__item"><a class="menu__item__link" href=""><i class="fas fa-search"></i></a></li>
         </ul>
     </nav>
@@ -31,6 +31,7 @@
             <section class="card">
                 <figure class="card__img">
                     <img src="img/OW_AF1.jpg" alt="Artwork of the OFF-WHITE Jordan AirForce 1's in red">
+                    <button class="card__fav" data-message="Put product on wishlist"><i class="fas fa-heart"></i></button>
                 </figure>
                 <section class="card__body">
                     <section class="card__body__text">
@@ -39,7 +40,7 @@
                     </section>
                     <section class="card__body__buttons">
                         <button class="card__body__buttons__readmore">Read More</button>
-                        <button>Order</button>
+                        <button onclick="window.location='contact.html'">Order</button>
                     </section>
                 </section>
             </section>
@@ -47,6 +48,7 @@
             <section class="card">
                 <figure class="card__img">
                     <img src="img/Cactus_Jack_Jordan1.jpg" alt="Artwork of the Cactus Jack Jordan 1 Retro High's">
+                    <button class="card__fav" data-message="Put product on wishlist"><i class="fas fa-heart"></i></button>
                 </figure>
                 <section class="card__body">
                     <section class="card__body__text">
@@ -55,7 +57,7 @@
                     </section>
                     <section class="card__body__buttons">
                         <button class="card__body__buttons__readmore">Read More</button>
-                        <button>Order</button>
+                        <button onclick="window.location='contact.html'">Order</button>
                     </section>
                 </section>
             </section>
@@ -63,6 +65,7 @@
             <section class="card">
                 <figure class="card__img">
                     <img src="img/Airmags.jpg" alt="Artwork of the iconic Nike Airmags">
+                    <button class="card__fav" data-message="Put product on wishlist"><i class="fas fa-heart"></i></button>
                 </figure>
                 <section class="card__body">
                     <section class="card__body__text">
@@ -72,7 +75,7 @@
                     </section>
                     <section class="card__body__buttons">
                         <button class="card__body__buttons__readmore">Read More</button>
-                        <button>Order</button>
+                        <button onclick="window.location='contact.html'">Order</button>
                     </section>
                 </section>
             </section>
@@ -80,6 +83,7 @@
             <section class="card">
                 <figure class="card__img">
                     <img src="img/Balancing_Jordans.jpg" alt="Artwork of balancing Air Jordan 1's">
+                    <button class="card__fav" data-message="Put product on wishlist"><i class="fas fa-heart"></i></button>
                 </figure>
                 <section class="card__body">
                     <section class="card__body__text">
@@ -88,7 +92,7 @@
                     </section>
                     <section class="card__body__buttons">
                         <button class="card__body__buttons__readmore">Read More</button>
-                        <button>Order</button>
+                        <button onclick="window.location='contact.html'">Order</button>
                     </section>
                 </section>
             </section>
@@ -96,6 +100,7 @@
             <section class="card">
                 <figure class="card__img">
                     <img src="img/Jordan_Wheel.jpg" alt="Artwork of a wheel of Air Jordan 1's">
+                    <button class="card__fav" data-message="Put product on wishlist"><i class="fas fa-heart"></i></button>
                 </figure>
                 <section class="card__body">
                     <section class="card__body__text">
@@ -104,7 +109,7 @@
                     </section>
                     <section class="card__body__buttons">
                         <button class="card__body__buttons__readmore">Read More</button>
-                        <button>Order</button>
+                        <button onclick="window.location='contact.html'">Order</button>
                     </section>
                 </section>
             </section>
@@ -112,6 +117,7 @@
             <section class="card">
                 <figure class="card__img">
                     <img src="img/Falling_Jordans.jpg" alt="Artwork of falling Air Jordan 1's">
+                    <button class="card__fav" data-message="Put product on wishlist"><i class="fas fa-heart"></i></button>
                 </figure>
                 <section class="card__body">
                     <section class="card__body__text">
@@ -120,7 +126,7 @@
                     </section>
                     <section class="card__body__buttons">
                         <button class="card__body__buttons__readmore">Read More</button>
-                        <button>Order</button>
+                        <button onclick="window.location='contact.html'">Order</button>
                     </section>
                 </section>
             </section>
@@ -165,19 +171,19 @@
                         the "UNC" colorway in 2018.</p>
                     <p class="modal__content__text__info">This print will be available in one size: 40cmx40cm</p>
                     <section class="modal__content__buttons">
-                        <button class="button__card"><i class="fas fa-shopping-cart"></i>Add to cart</button>
-                        <button class="button__wish-list"><i class="fas fa-heart"></i>Add to wishlist</button>
+                        <button class="modal__content__buttons__cart" onclick="window.location='contact.html'"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+                        <button class="modal__content__buttons__wish-list"><i class="fas fa-heart"></i>Add to wishlist</button>
                     </section>
                 </section>
             </section>
         </section>
     </article>
 
-    <article class="modal" id="modal">
+    <article class="modal">
         <section class="modal__inside">
             <section class="modal__inside__header">
                 <h2>Jordan 1 Retro High Cactus Jack Art Print</h2>
-                <a href=""><i class="fas fa-times" id="close"></i></a>
+                <a href=""><i class="fas fa-times"></i></a>
             </section>
             <section class="modal__inside__content">
                 <figure class="modal__inside__img">
@@ -200,19 +206,19 @@
                          in May of 2019.</p>
                          <p class="modal__content__text__info">This print will be available in one size: 40cmx40cm</p>
                     <section class="modal__content__buttons">
-                        <button class="button__card"><i class="fas fa-shopping-cart"></i>Add to cart</button>
-                        <button class="button__wish-list"><i class="fas fa-heart"></i>Add to wishlist</button>
+                        <button class="modal__content__buttons__cart" onclick="window.location='contact.html'"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+                        <button class="modal__content__buttons__wish-list"><i class="fas fa-heart"></i>Add to wishlist</button>
                     </section>
                 </section>
             </section>
         </section>
     </article>
 
-    <article class="modal" id="modal">
+    <article class="modal">
         <section class="modal__inside">
             <section class="modal__inside__header">
                 <h2>Air Mag Grey - Back to the Future Art Print</h2>
-                <a href=""><i class="fas fa-times" id="close"></i></a>
+                <a href=""><i class="fas fa-times"></i></a>
             </section>
             <section class="modal__inside__content">
                 <figure class="modal__inside__img">
@@ -225,19 +231,19 @@
                     <p class="modal__content__text__info">Back to the Future, the first in a trilogy of films, was a box office success. In 1989, Nike Inc. designer Tinker Hatfield was asked to create a shoe for the second installment of the series, which was partly set in the then-futuristic year of 2015. The shoe had features that included light-up panels and self-fastening laces.</p>
                     <p class="modal__content__text__info">This print will be available in one size: 40cmx40cm</p>
                     <section class="modal__content__buttons">
-                        <button class="button__card"><i class="fas fa-shopping-cart"></i>Add to cart</button>
-                        <button class="button__wish-list"><i class="fas fa-heart"></i>Add to wishlist</button>
+                        <button class="modal__content__buttons__cart" onclick="window.location='contact.html'"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+                        <button class="modal__content__buttons__wish-list"><i class="fas fa-heart"></i>Add to wishlist</button>
                     </section>
                 </section>
             </section>
         </section>
     </article>
 
-    <article class="modal" id="modal">
+    <article class="modal">
         <section class="modal__inside">
             <section class="modal__inside__header">
                 <h2>Balancing Jordans Art Print</h2>
-                <a href=""><i class="fas fa-times" id="close"></i></a>
+                <a href=""><i class="fas fa-times"></i></a>
             </section>
             <section class="modal__inside__content">
                 <figure class="modal__inside__img">
@@ -248,19 +254,19 @@
                     <p class="modal__content__text__info">This is a print of 3 Air Jordan 1 Highs in the colorways Cactus Jack, White/Black-Red and Obsidian</p>
                     <p class="modal__content__text__info">This print will be available in one size: 40cmx40cm</p>
                     <section class="modal__content__buttons">
-                        <button class="button__card"><i class="fas fa-shopping-cart"></i>Add to cart</button>
-                        <button class="button__wish-list"><i class="fas fa-heart"></i>Add to wishlist</button>
+                        <button class="modal__content__buttons__cart" onclick="window.location='contact.html'"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+                        <button class="modal__content__buttons__wish-list"><i class="fas fa-heart"></i>Add to wishlist</button>
                     </section>
                 </section>
             </section>
         </section>
     </article>
 
-    <article class="modal" id="modal">
+    <article class="modal">
         <section class="modal__inside">
             <section class="modal__inside__header">
                 <h2>Jordan Wheel Art Print</h2>
-                <a href=""><i class="fas fa-times" id="close"></i></a>
+                <a href=""><i class="fas fa-times"></i></a>
             </section>
             <section class="modal__inside__content">
                 <figure class="modal__inside__img">
@@ -271,19 +277,19 @@
                     <p class="modal__content__text__info">This is a print of 10 Air Jordan 1 Highs in different colorways.</p>
                     <p class="modal__content__text__info">This print will be available in one size: 40cmx40cm</p>
                     <section class="modal__content__buttons">
-                        <button class="button__card"><i class="fas fa-shopping-cart"></i>Add to cart</button>
-                        <button class="button__wish-list"><i class="fas fa-heart"></i>Add to wishlist</button>
+                        <button class="modal__content__buttons__cart" onclick="window.location='contact.html'"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+                        <button class="modal__content__buttons__wish-list"><i class="fas fa-heart"></i>Add to wishlist</button>
                     </section>
                 </section>
             </section>
         </section>
     </article>
 
-    <article class="modal" id="modal">
+    <article class="modal">
         <section class="modal__inside">
             <section class="modal__inside__header">
                 <h2>Falling Jordans Art Print</h2>
-                <a href=""><i class="fas fa-times" id="close"></i></a>
+                <a href=""><i class="fas fa-times"></i></a>
             </section>
             <section class="modal__inside__content">
                 <figure class="modal__inside__img">
@@ -294,8 +300,8 @@
                     <p class="modal__content__text__info">This is a print of 10 Air Jordan 1 Highs in different colorways.</p>
                     <p class="modal__content__text__info">This print will be available in one size: 40cmx40cm</p>
                     <section class="modal__content__buttons">
-                        <button class="button__card"><i class="fas fa-shopping-cart"></i>Add to cart</button>
-                        <button class="button__wish-list"><i class="fas fa-heart"></i>Add to wishlist</button>
+                        <button class="modal__content__buttons__cart" onclick="window.location='contact.html'"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+                        <button class="modal__content__buttons__wish-list"><i class="fas fa-heart"></i>Add to wishlist</button>
                     </section>
                 </section>
             </section>

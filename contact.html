@@ -10,7 +10,7 @@
     <nav role="navigation">
         <ul class="menu">
             <li class="menu__item">
-                <a class="menu__item__link" href="">
+                <a class="menu__item__link" href="index.html">
                     <p class="logo">"ART"</p>
                 </a>
             </li>
@@ -24,14 +24,14 @@
     </nav>
 
     <main>
-        <article class="contact-body">
+        <article class="order-body">
             <h1>Order Form</h1>
             <article class="form-top">
                 <h2>Personal Details</h2>
                 <form role="form">
                     <section class="form-left">
                         <label for="gender">Gender:</label>
-                        <select name="gender" id="gender">\
+                        <select name="gender" id="gender">
                             <option value="empty">Choose a gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -39,42 +39,44 @@
                         </select>
 
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required aria-required="true">
+                        <input type="email" id="email" name="email" required aria-required="true">
                     </section>
 
                     <section class="form-right">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required aria-required="true">
+                        <input type="text" id="name" name="name" required aria-required="true">
 
                         <label for="phonenumber">Phone number:</label>
-                        <input type="phonenumber" id="phonenumber" name="phonenumber" placeholder="06-12345678" required aria-required="true">
+                        <input type="number" id="phonenumber" name="phonenumber" placeholder="06-12345678" required aria-required="true">
                     </section>
                 </form>
             </article>
 
             <article class="form-bottom">
                 <h2>Delivery Details</h2>
-                <form role="form">
+                <form class="form" role="form">
                     <section class="form-left">
                         <label for="street">Street:</label>
-                        <input type="text" id="street" name="street" placeholder="Kalverstraat" required aria-required="true">
+                        <input type="text" id="street" name="street" required aria-required="true">
 
-                        <label for="postal-code">Postal Code</label>
-                        <input type="text" id="postalcode" name="postalcode" placeholder="1234 AB" required aria-required="true">
+                        <label for="postalcode">Postal Code:</label>
+                        <input type="text" id="postalcode" name="postalcode" placeholder="1111 AA" required aria-required="true">
                     </section>
 
                     <section class="form-right">
                         <label for="housenumber">Housenumber:</label>
-                        <input type="number" id="housenumber" name="housenumber" placeholder="12" required aria-required="true">
+                        <section class="form-right__addon"></section>
+                            <input class="small" type="number" id="housenumber" name="housenumber" placeholder="Nr." required aria-required="true">
+                            <input class="small" type="text" id="add" name="add" placeholder="Add">
 
                         <label for="city">City:</label>
-                        <input type="text" id="city" name="city" placeholder="Amsterdam" required aria-required="true">
+                        <input type="text" id="city" name="city" required aria-required="true">
                     </section>
                 </form>
 
                 <section class="form-buttons">
-                    <button class="cancel">Cancel</button>
-                    <button class="order">Place Order</button>
+                    <button class="cancel" onclick="window.location='index.html'">Cancel</button>
+                    <button class="order" onclick="window.location='index.html'">Place Order</button>
                 </section>
             </article>
         </article>

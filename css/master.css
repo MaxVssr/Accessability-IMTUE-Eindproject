@@ -70,6 +70,22 @@ nav {
     cursor: pointer;
 }
 
+.card__fav {
+    position: absolute;
+    width: 3vh;
+    height: 3vh;
+    margin: 1.9vh 0 0 -2.5vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    z-index: 3;
+    color: white;
+}
+
+.card__fav:active {
+    background-color: #505E99;
+}
+
 /* .card {
     border: 1px solid black;
 } */
@@ -95,15 +111,24 @@ button {
     margin: 2rem 0.5rem 5rem 0.5rem;
 }
 
-button:hover {
+.modal__content__buttons__cart, .order {
+    height: 4rem;
+    width: 35%;
+    background-color: #505E99;
+    color: white;
+    border: 1px solid #121317;
+    margin: 2rem 0.5rem 5rem 0.5rem;
+}
+
+.modal__content__buttons__cart:hover, .order:hover {
+    cursor: pointer;
+    background-color:  #121317;
+}
+
+button:hover, button:focus {
     cursor: pointer;
     background-color: #505E99;
 }
-
-button:focus {
-    background-color: #505E99;
-}
-
 .buttons-pages {
     display: flex;
     flex-direction: row;
@@ -131,6 +156,10 @@ button:focus {
     background-color: #505E99;
 }
 
+.noscroll {
+    overflow: hidden;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -139,7 +168,8 @@ button:focus {
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    overflow: auto;
+    /* overflow: auto; */
+    z-index: 4;
 }
 
 .modal__inside {
@@ -148,6 +178,8 @@ button:focus {
     padding: 2rem;
     border: 2px solid black;
     width: 50%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .modal__inside__header {
@@ -173,12 +205,12 @@ button:focus {
     height: auto;
 }
 
-#close {
+.fa-times {
     float: right;
     font-size: 2.5rem;
 }
 
-#close:hover {
+.fa-times:hover {
     cursor: pointer;
     color: black;
     text-decoration: none;
@@ -200,3 +232,45 @@ button:focus {
     margin-top: 1.5rem;
 }
 
+.order-body {
+    margin: 5% 40% 0 40%;
+}
+
+.order-body h1 {
+    font-size: 4rem;
+}
+
+.form-top h2, .form-bottom h2 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem 0;
+}
+
+/* .form-right {
+    margin-top: 5rem;
+} */
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+select, input {
+    margin: 1rem 0 1rem 0;
+    border: 2px solid black;
+    height: 3rem;
+}
+
+.form-right__addon {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.small {
+    max-width: 8rem;
+}
