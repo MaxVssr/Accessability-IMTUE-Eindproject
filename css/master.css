@@ -53,6 +53,14 @@ nav {
     border-bottom: 2px solid white;
 }
 
+.menu__item__link:focus-visible {
+    outline: #505E99 solid 0.3rem;
+}
+
+.logo:focus-visible {
+    outline: #505E99 solid 0.3rem;
+}
+
 .card-wrapper{
     display: grid;
     grid-template-columns: repeat(3,minmax(0,1fr));
@@ -116,6 +124,10 @@ button {
     margin: 2rem 0.5rem 5rem 0.5rem;
 }
 
+.card__body__buttons__order {
+    background-color: #505E99;
+}
+
 .modal__content__buttons__cart, .order {
     height: 4rem;
     width: 35%;
@@ -127,12 +139,13 @@ button {
 
 .modal__content__buttons__cart:hover, .order:hover {
     cursor: pointer;
-    background-color:  #121317;
+    background-color:  #5a5a5a;
 }
 
 button:hover, button:focus {
     cursor: pointer;
-    background-color: #505E99;
+    background-color: #5a5a5a;
+    outline: #505E99 solid 0.3rem;
 }
 .buttons-pages {
     display: flex;
@@ -214,9 +227,10 @@ button:hover, button:focus {
     color: black;
 }
 
-.fa-times:hover {
+.fa-times:hover, .fa-times:focus {
     cursor: pointer;
     text-decoration: none;
+    color: black;
 }
 
 .modal__content__text {
@@ -264,6 +278,10 @@ select, input {
     height: 3rem;
 }
 
+input::-webkit-input-placeholder{
+    padding-left: 0.6rem;
+}
+
 .form-right__addon {
     display: flex;
     flex-direction: row;
@@ -272,4 +290,13 @@ select, input {
 
 .small {
     max-width: 8rem;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+    position: relative;
+    font-size: 2rem;
+    padding-left: 0.3rem;
+    z-index: 3;
 }

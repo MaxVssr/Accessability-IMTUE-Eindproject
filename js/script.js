@@ -2,59 +2,17 @@ let modal = document.getElementsByClassName("modal");
 let button = document.getElementsByClassName("card__body__buttons__readmore");
 let close_button = document.getElementsByClassName("fas fa-times");
 let img = document.getElementsByClassName("card__img");
+let order = document.getElementsByClassName("card__body__buttons__order");
 
-let bodyScroll = document.getElementsByTagName("body")[0];
+ for(let i = 0; i < button.length; i++) {
+    button[i].addEventListener("click", function(evt){
+        modal[i].style.display = "block";
+        modal[i].focus();
+    });
+ }
 
-button[0].onclick = function(){
-    modal[0].style.display = "block";
-    bodyScroll.classList.toggle('noscroll');
-};
-
-close_button[0].onclick = function(){
-    modal[0].style.display = "none";
-};
-
-button[1].onclick = function(){
-    modal[1].style.display = "block";
-    bodyScroll.classList.toggle('noscroll');
-};
-
-close_button[1].onclick = function(){
-    modal[1].style.display = "none";
-};
-
-button[2].onclick = function(){
-    modal[2].style.display = "block";
-    bodyScroll.classList.toggle('noscroll');
-};
-
-close_button[2].onclick = function(){
-    modal[2].style.display = "none";
-};
-
-button[3].onclick = function(){
-    modal[3].style.display = "block";
-    bodyScroll.classList.toggle('noscroll');
-};
-
-close_button[3].onclick = function(){
-    modal[3].style.display = "none";
-};
-
-button[4].onclick = function(){
-    modal[4].style.display = "block";
-    bodyScroll.classList.toggle('noscroll');
-};
-
-close_button[4].onclick = function(){
-    modal[4].style.display = "none";
-};
-
-button[5].onclick = function(){
-    modal[5].style.display = "block";
-    bodyScroll.classList.toggle('noscroll');
-};
-
-close_button[5].onclick = function(){
-    modal[5].style.display = "none";
-};
+ for(let i = 0; i < close_button.length; i++) {
+    close_button[i].addEventListener("click", function(evt){
+        modal[i].style.display = "none";
+    });
+ }

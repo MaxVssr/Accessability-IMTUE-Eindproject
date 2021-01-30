@@ -38,16 +38,16 @@
                             <option value="neutral">Neutral</option>
                         </select>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
+                        <label class="required" for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="johnsmith1971@gmail.com" aria-placeholder="johnsmith1971@gmail.com" required aria-required="true">
                     </section>
 
                     <section class="form-right">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
+                        <label class="required" for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" aria-placeholder="John Smith" required aria-required="true">
 
-                        <label for="phonenumber">Phone number:</label>
-                        <input type="number" id="phonenumber" name="phonenumber" placeholder="06-12345678" required aria-required="true">
+                        <label class="required" for="phonenumber">Phone number:</label>
+                        <input type="number" id="phonenumber" name="phonenumber" placeholder="06-12345678" aria-required="06-12345678" required aria-required="true">
                     </section>
                 </form>
             </article>
@@ -56,26 +56,26 @@
                 <h2>Delivery Details</h2>
                 <form class="form" role="form">
                     <section class="form-left">
-                        <label for="street">Street:</label>
-                        <input type="text" id="street" name="street" required aria-required="true">
+                        <label class="required" for="street">Street:</label>
+                        <input type="text" id="street" name="street" placeholder="Amsterdamstraat" aria-placeholder="Amsterdamstraat" required aria-required="true">
 
-                        <label for="postalcode">Postal Code:</label>
-                        <input type="text" id="postalcode" name="postalcode" placeholder="1111 AA" required aria-required="true">
+                        <label class="required" for="postalcode">Postal Code:</label>
+                        <input type="text" id="postalcode" name="postalcode" placeholder="1111 AA" aria-placeholder="1111 AA" required aria-required="true">
                     </section>
 
                     <section class="form-right">
-                        <label for="housenumber">Housenumber:</label>
+                        <label class="required" for="housenumber">Housenumber:</label>
                         <section class="form-right__addon"></section>
-                            <input class="small" type="number" id="housenumber" name="housenumber" placeholder="Nr." required aria-required="true">
-                            <input class="small" type="text" id="add" name="add" placeholder="Add">
+                            <input class="small" type="number" id="housenumber" name="housenumber" placeholder="Nr." aria-placeholder="Nr." required aria-required="true">
+                            <input class="small" type="text" id="add" name="add" placeholder="Add" aria-placeholder="Add">
 
-                        <label for="city">City:</label>
-                        <input type="text" id="city" name="city" required aria-required="true">
+                        <label class="required" for="city">City:</label>
+                        <input type="text" id="city" name="city" placeholder="Amsterdam" aria-placeholder="Amsterdam" required aria-required="true">
                     </section>
                 </form>
 
                 <section class="form-buttons">
-                    <button class="cancel" onclick="window.location='index.html'">Cancel</button>
+                    <button aria-label="Go back to the home page" class="cancel" onclick="window.location='index.html'">Cancel</button>
                     <button class="order" onclick="window.location='index.html'">Place Order</button>
                 </section>
             </article>
